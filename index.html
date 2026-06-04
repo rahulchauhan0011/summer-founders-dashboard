@@ -301,15 +301,13 @@
       </div>
       <div class="stage-divider"><div class="stage-num">3</div></div>
       <div class="pathway-side pathway-first">
-        <div class="pathway-side pathway-first" style="border-left:none;padding:0;background:none">
-        <div class="pathway-side pathway-first">
+        <div class="pathway-label">First-Time Entrepreneurs <span class="badge">84 codes</span></div>
         <ul class="pathway-traits">
           <li>Steep learning curve on evidence-based entrepreneurship</li>
           <li>Heavier reliance on peer learning and cohort support</li>
           <li>Greater mentor dependency for foundational guidance</li>
           <li>Higher imposter syndrome and pressure to start a company</li>
         </ul>
-        </div>
       </div>
     </div>
 
@@ -394,7 +392,7 @@ new Chart(document.getElementById('codesChart'), {
     datasets:[{
       label:'1st Order Codes',
       data:[47,38,42,42,36,35,40,25,24,23,63,44,66,78,114,82,70,66,44],
-      backgroundColor: Array(18).fill('#2E75B6').concat(['#764ba2']),
+      backgroundColor: Array(19).fill('#2E75B6'),
       borderRadius:5
     }]
   },
@@ -402,7 +400,7 @@ new Chart(document.getElementById('codesChart'), {
     responsive:true,
     plugins:{
       legend:{display:false},
-      tooltip:{callbacks:{label:ctx=>`${ctx.raw} codes${ctx.dataIndex===18?' (Garrison Davis — new)':''}`}}
+      tooltip:{callbacks:{label:ctx=>`${ctx.raw} codes`}}
     },
     scales:{
       y:{beginAtZero:true,grid:{color:'#f0f0f0'},title:{display:true,text:'Number of Codes'}},
@@ -429,7 +427,7 @@ new Chart(document.getElementById('segmentsChart'), {
     datasets:[{
       label:'Coded Segments',
       data:[28,24,23,21,18,18,22,15,12,42,42,22,33,39,57,41,35,33,40],
-      backgroundColor:Array(18).fill('#667eea').concat(['#764ba2']),
+      backgroundColor:Array(19).fill('#667eea'),
       borderRadius:5
     }]
   },
